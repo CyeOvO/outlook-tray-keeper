@@ -27,7 +27,7 @@ So the keeper does three things:
 ## Install
 
 ```powershell
-git clone https://github.com/<you>/outlook-tray-keeper.git
+git clone https://github.com/CyeOvO/outlook-tray-keeper.git
 cd outlook-tray-keeper
 powershell -NoProfile -ExecutionPolicy Bypass -File install.ps1
 ```
@@ -98,6 +98,7 @@ $ol = [Runtime.InteropServices.Marshal]::GetActiveObject('Outlook.Application')
 | `OlkTrayKeep.ps1` | the keeper (PowerShell 5.1+, ASCII source) |
 | `install.ps1` | deploy / autostart / status / uninstall |
 | `csharp/OlkTrayKeep.cs` | equivalent C# implementation, compiled with `csc.exe`, no dependencies |
+| `build-csharp.ps1` | compiles the C# variant with the in-box csc.exe |
 | `CHANGELOG.md` | version history |
 
 Build the C# variant:
